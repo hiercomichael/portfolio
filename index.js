@@ -10,3 +10,9 @@ document.onmousemove = function() {
         balls[i].style.transform = "translate(-"+x+",-"+y+")";
     }
 }
+
+setTimeout(function(){
+   document.querySelector(".loading").classList.add("loaded");
+   document.querySelector("body").style.overflow="scroll";
+   }, 2000);
+
